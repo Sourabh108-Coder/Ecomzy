@@ -33,11 +33,11 @@ const CartItem = (props) => {
       </div>
 
       <div>
-        <h2>{props.post.title}</h2>
-        <p>{desc}....</p>
+        <h2 className='Cart_item_head'>{props.post.title}</h2>
+        <p className='Cart_item_desc'>{desc}....</p>
 
         <div className='pri-ico'>
-          <h3>{props.post.price}</h3>
+          <h3 className='Cart_item_price'>{props.post.price}</h3>
           <div className='ico-div'><MdAutoDelete className='ico' onClick={removeHandler} /></div>
         </div>
       </div>
